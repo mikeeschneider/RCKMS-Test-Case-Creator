@@ -5,14 +5,15 @@
 		<family value="PatientLN"/>
 		<DOB value="20000505"/>
 		<adminGenderCode code="F" displayName="Female"/>
-		<deceasedInd value="false"/>
 		<!-- boolean: "true" and "false" -->
+		<deceasedInd value="false"/>
+		<!-- deceasedTime will not display if deceasedInd="false"-->
 		<deceasedTime value="20240409"/>
 		<raceCode code="2106-3" displayName="WHITE"/>
-		<!--Leave value below blank (value="") if not necessary-->
+		<!--Leave code attribute below blank (code="") if not necessary-->
 		<sdtcRaceCode code="" displayName=""/>
 		<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"/>
-		<!--Leave value below blank (value="") if not necessary-->
+		<!--Leave code attribute below blank (code="") if not necessary-->
 		<sdtcEthnicGroupCode code="" displayName=""/>
 		<!--PATIENT ADDRESS-->
 		<streetAddressLine value="5 Patient Street"/>
@@ -58,7 +59,7 @@
 		<code value="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4"/>
 		<!--Visit Start/Admission Date-->
 		<effectiveTimeLow value="20240409"/>
-		<!--Visit End/Discharge Date (does not need to be completed): Leave value blank (value="")if not necessary-->
+		<!--Visit End/Discharge Date (does not need to be completed): Leave value blank (value="") if not necessary-->
 		<effectiveTimeHigh value="20240409"/>
 		<!--RESPONSIBLE PARTY and REPRESENTED ORGANIZATION-->
 		<name value="Party Name"/>
