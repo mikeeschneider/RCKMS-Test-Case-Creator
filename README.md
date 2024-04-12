@@ -16,7 +16,7 @@ This can be used to create test case eCR XML files for testing RCKMS Authoring r
 Example:
 Before Adding more Encounter Diagnoses:
 ```
-  	<EncounterActivity>
+	<EncounterActivity>
 		<!--Duplicate EncounterDiagnosis block to add more encounter diagnoses-->
 		<EncounterDiagnosis>
 			<!--*** Leave code attribute (below) blank (code="") to not show encounter diagnosis ***-->
@@ -30,7 +30,7 @@ Before Adding more Encounter Diagnoses:
 
  After Adding more Encounter Diagnoses:
  ```
- 	<EncounterActivity>
+  <EncounterActivity>
 		<!--Duplicate EncounterDiagnosis block to add more encounter diagnoses-->
 		<EncounterDiagnosis>
 			<!--*** Leave code attribute (below) blank (code="") to not show encounter diagnosis ***-->
