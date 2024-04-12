@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<patient>
+		<given value="PatientFN"/>
+		<family value="PatientLN"/>
+		<DOB value="20000505"/>
+		<adminGenderCode code="F" displayName="Female"/>
+		<deceasedInd value="false"/>
+		<!-- boolean: "true" and "false" -->
+		<deceasedTime value="20240409"/>
+		<raceCode code="2106-3" displayName="WHITE"/>
+		<!--Leave value below blank (value="") if not necessary-->
+		<sdtcRaceCode code="" displayName=""/>
+		<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"/>
+		<!--Leave value below blank (value="") if not necessary-->
+		<sdtcEthnicGroupCode code="" displayName=""/>
+		<!--PATIENT ADDRESS-->
+		<streetAddressLine value="5 Patient Street"/>
+		<city value="Hartford"/>
+		<state value="CT"/>
+		<postalCode value="06666"/>
+		<county value="Hartford"/>
+		<country value="US"/>
+		<telecomHP value="tel:555-555-2003"/>
+		<telecomMail value="mailto:patient@email.com"/>
+	</patient>
+	<effectiveTime>
+		<!--eCR Document Time, Medication Administration Time-->
+		<effectiveTimeWithTime value="20240410121212-0400"/>
+		<!-- Encounter section, Encounter Activity, Problem Concern Act, Problem Observation, Plan of Treatment-->
+		<effectiveTimes value="20240410"/>
+		<!--Result Organizer and Result Observation-->
+		<effectiveTimeResult value="20240409121212-0400"/>
+	</effectiveTime>
+	<author>
+		<name value="Author Name"/>
+		<streetAddressLine value="5 Author Way"/>
+		<city value="Hartford"/>
+		<state value="CT"/>
+		<postalCode value="06666"/>
+		<county value="Hartford"/>
+		<country value="US"/>
+		<telecomHP value="tel:TBDFacilityPhone"/>
+		<telecomFax value="fax:TBDFacilityFax"/>
+	</author>
+	<custodian>
+		<name value="Custodian Name"/>
+		<streetAddressLine value="5 Custodian Way"/>
+		<city value="Hartford"/>
+		<state value="CT"/>
+		<postalCode value="06666"/>
+		<country value="US"/>
+		<telecomHP value="tel:TBDFacilityPhone"/>
+		<telecomFax value="fax:TBDFacilityFax"/>
+	</custodian>
+	<encounter>
+		<!--HL7 ActEncounterCode: AMB, EMER, IMP, etc-->
+		<code value="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4"/>
+		<!--Visit Start/Admission Date-->
+		<effectiveTimeLow value="20240409"/>
+		<!--Visit End/Discharge Date (does not need to be completed): Leave value blank (value="")if not necessary-->
+		<effectiveTimeHigh value="20240409"/>
+		<!--RESPONSIBLE PARTY and REPRESENTED ORGANIZATION-->
+		<name value="Party Name"/>
+		<streetAddressLine value="5 RepParty Way"/>
+		<city value="Hartford"/>
+		<state value="CT"/>
+		<postalCode value="06666"/>
+		<country value="US"/>
+		<telecomHP value="tel:TBDFacilityPhone"/>
+		<telecomFax value="fax:TBDFacilityFax"/>
+		<!--HEALTHCAREFACILITY and SERVICE PROVIDER ORGANIZATION-->
+		<!--NHSN Code System-->
+		<codeHCF value="1112-1" displayName="Fake Ward" codeSystem="2.16.840.1.113883.6.259"/>
+		<nameHCF value="HCF Name"/>
+		<streetAddressLineHCF value="5 HCF Way"/>
+		<cityHCF value="Hartford"/>
+		<stateHCF value="CT"/>
+		<postalCodeHCF value="06666"/>
+		<countryHCF value="US"/>
+		<telecomHPHCF value="tel:TBDFacilityPhone"/>
+		<telecomFaxHCF value="fax:TBDFacilityFax"/>
+	</encounter>
+	<encounterSection>
+		<code value="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12"/>
+	</encounterSection>
+	<Medication>
+		<!--Duplicate AdministeredMeds block to add more medications-->
+		<AdministeredMeds>
+			<medtext value=""/>
+			<!--*** Leave code attribute (below) blank (code="") to not show medications ***-->
+			<!--Typically use RXNORM codes-->
+			<code code="" codeSystem="2.16.840.1.113883.6.88"/>
+			<!--codeSystemName="NCI Thesaurus"-->
+			<routeCode code="" displayName="" codeSystem="2.16.840.1.113883.3.26.1.1" />
+			<doseQuantity unit="" value=""/>
+		</AdministeredMeds>
+	</Medication>
+	<Results>
+		<!--Duplicate ResultOrganizer block to add more results-->
+		<ResultOrganizer>
+			<!--*** Leave code attribute (below) blank (code="") to not show specimen procedure***-->
+			<specimen code="" displayName="" codeSystem="2.16.840.1.113883.6.96"/>
+			<!--*** Leave code attribute (below) blank (code="") to not show results***-->
+			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.1"/>
+			<!--*** If code attribute (below) is left blank (code=""), then value attribute will be displayed***-->
+			<value code="" displayName="" codeSystem="2.16.840.1.113883.6.96" value="" unit=""/>
+			<interpretationCode code="" displayName="" codeSystem="2.16.840.1.113883.5.83"/>
+		</ResultOrganizer>
+	</Results>
+	<PlanOfTreatment>
+		<!--Duplicate PlannedObservation block to add more planned observations-->
+		<PlannedObservation>
+			<!--*** Leave code attribute (below) blank (code="") to not show planned observations ***-->
+			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.1"/>
+		</PlannedObservation>
+		<!--Duplicate PlannedObservation block to add more planned observations-->
+		<PlannedProcedure>
+			<!--*** Leave code attribute (below) blank (code="") to not show planned procedure ***-->
+			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.1"/>
+		</PlannedProcedure>
+	</PlanOfTreatment>
+	<ProblemConcernAct>
+		<!--Duplicate ProblemObservation block to add more active problems-->
+		<ProblemObservation>
+			<!--*** Leave code attribute (below) blank (code="") to not show problems ***-->
+			<!--Typically uses SNOMEDs-->
+			<value code="" displayName="" codeSystem="2.16.840.1.113883.6.96"/>
+			<!--Typically uses ICD10-->
+			<translation code="" displayName="" codeSystem="2.16.840.1.113883.6.90"/>
+		</ProblemObservation>
+	</ProblemConcernAct>
+	<EncounterActivity>
+		<!--Duplicate EncounterDiagnosis block to add more encounter diagnoses-->
+		<EncounterDiagnosis>
+			<!--*** Leave code attribute (below) blank (code="") to not show encounter diagnosis ***-->
+			<!--Typically uses SNOMEDs-->
+			<value code="" displayName="" codeSystem="2.16.840.1.113883.6.96" />
+			<!--Typically uses ICD10-->
+			<translation code="" displayName="" codeSystem="2.16.840.1.113883.6.90"/>
+		</EncounterDiagnosis>
+	</EncounterActivity>
+</data>
