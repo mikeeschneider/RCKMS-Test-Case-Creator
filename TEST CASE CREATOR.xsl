@@ -650,6 +650,28 @@
 									<value code="159606005" displayName="Sales" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
 								</observation>
 							</entry>
+							<xsl:if test="not(/data/pregnancy/effectiveTime/@value = '')">
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+									<id extension="Z4735487^66910^77386006" root="1.2.840.114350.1.13.301.2.7.1.1040.6"/>
+									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="{/data/pregnancy/effectiveTime/@value}"/>
+									</effectiveTime>
+									<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="77386006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Pregnancy" xsi:type="CD"/>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+											<code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Estimated date of delivery"/>
+											<statusCode code="completed"/>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="{/data/pregnancy/EDD/@value}" xsi:type="TS"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entry>
+							</xsl:if>
 						</section>
 					</component>
 				</structuredBody>
