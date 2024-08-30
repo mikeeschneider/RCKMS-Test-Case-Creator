@@ -335,14 +335,14 @@
 												<act classCode="ACT" moodCode="EVN">
 													<templateId root="2.16.840.1.113883.10.20.22.4.80"/>
 													<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.80"/>
-													<id extension="293402393-315568-concern" root="1.2.840.114350.1.13.301.2.7.1.1099.1"/>
+													<id extension="299999999-311111-concern" root="1.2.840.114350.1.13.000.2.7.1.1000.1"/>
 													<code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
 													<statusCode code="active"/>
 													<entryRelationship inversionInd="false" typeCode="SUBJ">
 														<observation classCode="OBS" moodCode="EVN">
 															<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
 															<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
-															<id extension="293402393-315568" root="1.2.840.114350.1.13.301.2.7.1.1099.1"/>
+															<id extension="299999999-311111" root="1.2.840.114350.1.13.000.2.7.1.1000.1"/>
 															<code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
 																<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
 															</code>
@@ -391,7 +391,7 @@
 										<substanceAdministration classCode="SBADM" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
 											<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.16"/>
-											<id extension="831293486" root="1.2.840.114350.1.13.301.2.7.2.798268"/>
+											<id extension="831293486" root="1.2.840.114350.1.13.000.2.7.2.777777"/>
 											<text>
 												<xsl:value-of select="medtext/@value"/>
 											</text>
@@ -443,7 +443,7 @@
 										<act classCode="ACT" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
 											<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
-											<id extension="20516347-concern" root="1.2.840.114350.1.13.301.2.7.2.768076"/>
+											<id extension="20516347-concern" root="1.2.840.114350.1.13.000.2.7.2.777777"/>
 											<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
 											<statusCode code="active"/>
 											<effectiveTime>
@@ -453,7 +453,7 @@
 												<observation classCode="OBS" moodCode="EVN">
 													<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
 													<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
-													<id extension="20516347" root="1.2.840.114350.1.13.301.2.7.2.768076"/>
+													<id extension="20516347" root="1.2.840.114350.1.13.000.2.7.2.777777"/>
 													<code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
 														<translation code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 													</code>
