@@ -126,6 +126,12 @@
 			<!--*** Leave code attribute (below) blank (code="") to not show planned procedure ***-->
 			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.1"/>
 		</PlannedProcedure>
+		<PlannedMedication>
+			<!--*** Leave code attribute (below) blank (code="") to not show planned medication activity ***-->
+			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.88"/>
+			<!--The time the planned medication activity should occur (yyyymmdd).-->
+			<effectiveTime value="20240901"/>
+		</PlannedMedication>
 	</PlanOfTreatment>
 	<ProblemConcernAct>
 		<!--Duplicate ProblemObservation block to add more active problems-->
