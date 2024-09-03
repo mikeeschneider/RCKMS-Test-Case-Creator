@@ -395,7 +395,7 @@
 											<text>
 												<xsl:value-of select="medtext/@value"/>
 											</text>
-											<statusCode code="active"/>
+											<statusCode code="completed"/>
 											<effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
 												<low value="{/data/effectiveTime/effectiveTimeWithTime/@value}"/>
 											</effectiveTime>
