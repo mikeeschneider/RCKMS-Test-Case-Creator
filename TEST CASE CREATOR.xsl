@@ -593,7 +593,7 @@
 							<xsl:for-each select="/data/PlanOfTreatment/PlannedProcedure">
 								<xsl:if test="not(code/@code = '')">
 									<entry>
-										<!--This is a request for a test to be performed (a lab test order)-->
+										<!--This is a request for a procedure to be performed (a procedure order)-->
 										<procedure moodCode="INT" classCode="PROC">
 											<!--[C-CDA R1.1] Planned Procedure-->
 											<templateId root="2.16.840.1.113883.10.20.22.4.41"/>
@@ -604,6 +604,29 @@
 											<statusCode code="active"/>
 											<effectiveTime value="{/data/effectiveTime/effectiveTimes/@value}"/>
 										</procedure>
+									</entry>
+								</xsl:if>
+							</xsl:for-each>
+							<xsl:for-each select="/data/PlanOfTreatment/PlannedMedication">
+								<xsl:if test="not(code/@code = '')">
+									<entry>
+										<!--This is a Planned Medication Activity Medication Activity (V2)-->
+										<substanceAdministration classCode="SBADM" moodCode="INT">
+											<templateId root="2.16.840.1.113883.10.20.22.4.42"/>
+											<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.42"/>
+											<id root="831293486"/>
+											<statusCode code="active"/>
+											<effectiveTime value="{/data/PlanOfTreatment/PlannedMedication/effectiveTime/@value}"/>
+											<consumable>
+												<manufacturedProduct classCode="MANU">
+													<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+													<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.23"/>
+													<manufacturedMaterial>
+														<code code="{code/@code}" codeSystem="{code/@codeSystem}" displayName="{/data/PlanOfTreatment/PlannedMedication/code/@displayName}"/>
+													</manufacturedMaterial>
+												</manufacturedProduct>
+											</consumable>
+										</substanceAdministration>
 									</entry>
 								</xsl:if>
 							</xsl:for-each>
