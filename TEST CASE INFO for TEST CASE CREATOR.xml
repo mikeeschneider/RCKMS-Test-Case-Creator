@@ -27,17 +27,17 @@
 	</patient>
 	<pregnancy>
 		<!--Starting date of pregnancy (yyyymmdd). Leave blank if pregnancy section is not needed-->
-		<effectiveTime value="20240805"/>
+		<effectiveTime value=""/>
 		<!--Estimated Date of Delivery (yyyymmdd)-->
 		<EDD value=""/>
 	</pregnancy>
 	<effectiveTime>
 		<!--eCR Document Time, Medication Administration Time-->
-		<effectiveTimeWithTime value="20240410121212-0400"/>
+		<effectiveTimeWithTime value="YYYYMMDD121212-0400"/>
 		<!-- Encounter section, Encounter Activity, Problem Concern Act, Problem Observation, Plan of Treatment-->
-		<effectiveTimes value="20240410"/>
+		<effectiveTimes value="YYYYMMDD"/>
 		<!--Result Organizer and Result Observation-->
-		<effectiveTimeResult value="20240409121212-0400"/>
+		<effectiveTimeResult value="YYYYMMDD121212-0400"/>
 	</effectiveTime>
 	<author>
 		<name value="Author Name"/>
@@ -64,9 +64,9 @@
 		<!--HL7 ActEncounterCode: AMB, EMER, IMP, etc-->
 		<code value="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4"/>
 		<!--Visit Start/Admission Date-->
-		<effectiveTimeLow value="20240409"/>
+		<effectiveTimeLow value="YYYYMMDD"/>
 		<!--Visit End/Discharge Date (does not need to be completed): Leave value blank (value="") if not necessary-->
-		<effectiveTimeHigh value="20240409"/>
+		<effectiveTimeHigh value="YYYYMMDD"/>
 		<!--RESPONSIBLE PARTY and REPRESENTED ORGANIZATION-->
 		<name value="Party Name"/>
 		<streetAddressLine value="5 RepParty Way"/>
@@ -130,7 +130,7 @@
 			<!--*** Leave code attribute (below) blank (code="") to not show planned medication activity ***-->
 			<code code="" displayName="" codeSystem="2.16.840.1.113883.6.88"/>
 			<!--The time the planned medication activity should occur (yyyymmdd).-->
-			<effectiveTime value="20240901"/>
+			<effectiveTime value=""/>
 		</PlannedMedication>
 	</PlanOfTreatment>
 	<ProblemConcernAct>
