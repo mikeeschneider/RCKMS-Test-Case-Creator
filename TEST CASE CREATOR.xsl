@@ -566,8 +566,8 @@
 					<component>
 						<section>
 							<!--[C-CDA R1.1] Plan of Care Section new-->
-							<templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
-							<templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2014-06-09"/>
+							<templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+							<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
 							<code code="18776-5" displayName="Plan of Treatment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<title>Plan of Treatment</title>
 							<text>
